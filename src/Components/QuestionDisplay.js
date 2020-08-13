@@ -6,10 +6,7 @@ import QueryAllQuestions from "../GraphQL/QueryAllQuestions";
 
 const QuestionDisplay = ({data}) => {
 	const [questions, setQuestions] = useState(data.listQuestions.items)
-	console.log({questions})
 	const [randomQ, setRandomQ] = useState(questions[Math.floor(Math.random() * questions.length)].question)
-	console.log({randomQ})
-
 
 	const getQuestion = async () => {
 		setRandomQ(questions[Math.floor(Math.random() * questions.length)].question)
@@ -19,7 +16,7 @@ const QuestionDisplay = ({data}) => {
 
 	return ( 
 		<div>
-			<p>Question Display: {randomQ}</p>
+			<p>Question: {randomQ}</p>
 			<button onClick={getQuestion}>
 				Get Question
 			</button>
