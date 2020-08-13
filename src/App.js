@@ -6,7 +6,8 @@ import { ApolloProvider } from "react-apollo";
 import AWSAppSyncClient, { defaultDataIdFromObject } from "aws-appsync";
 import { Rehydrated } from "aws-appsync-react";
 import Amplify from 'aws-amplify';
-import './App.css';
+import './Styles/App.scss';
+import './Styles/reset.scss';
 import { Home } from './Components/Home'
 
 
@@ -14,7 +15,7 @@ Amplify.configure(appSyncConfig);
 
 const App = () => (
   <Router>
-    <div>
+    <div className="App">
       <Route exact={true} path="/" component={Home} />
     </div>
   </Router>
