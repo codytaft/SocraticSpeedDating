@@ -1,0 +1,14 @@
+projects:
+  Socratic Speed Dating:
+    schemaPath: src/GraphQL/schema.json
+    includes:
+      - src/GraphQL/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        region: us-east-1
+        apiId: hb3tocdievenjjlru52vezvvie
