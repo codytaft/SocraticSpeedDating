@@ -11,5 +11,18 @@
             "StackId": "arn:aws:cloudformation:us-east-1:096979627383:stack/amplify-socraticspeeddating-dev-04612/ae2c9ef0-dd30-11ea-86a6-0e6115325dc3",
             "AmplifyAppId": "d8vpyfgaqql5e"
         }
+    },
+    "backend": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-socraticspeeddating-backend-10117-authRole",
+            "UnauthRoleArn": "arn:aws:iam::096979627383:role/amplify-socraticspeeddating-backend-10117-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::096979627383:role/amplify-socraticspeeddating-backend-10117-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-socraticspeeddating-backend-10117-deployment",
+            "UnauthRoleName": "amplify-socraticspeeddating-backend-10117-unauthRole",
+            "StackName": "amplify-socraticspeeddating-backend-10117",
+            "StackId": "arn:aws:cloudformation:us-east-1:096979627383:stack/amplify-socraticspeeddating-backend-10117/c97765d0-dd32-11ea-b0b1-0ed2247e0ea9",
+            "AmplifyAppId": "d8vpyfgaqql5e"
+        }
     }
 }
