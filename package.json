@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/datastore": "^2.2.9",
     "aws-amplify": "^3.0.23",
     "aws-appsync": "^3.0.1",
     "aws-appsync-react": "^3.0.1",
