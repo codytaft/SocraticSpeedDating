@@ -5,13 +5,14 @@ import appSyncConfig from "./aws-exports";
 import { ApolloProvider } from "react-apollo";
 import AWSAppSyncClient, { defaultDataIdFromObject } from "aws-appsync";
 import { Rehydrated } from "aws-appsync-react";
-import Amplify from 'aws-amplify';
+import Amplify, { DataStore }from 'aws-amplify';
 import './Styles/App.scss';
 import './Styles/reset.scss';
 import { Home } from './Components/Home'
 
 
 Amplify.configure(appSyncConfig);
+DataStore.configure(awsconfig);
 
 const App = () => (
   <Router>
