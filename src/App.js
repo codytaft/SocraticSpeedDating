@@ -13,6 +13,7 @@ import Header from './Components/Header'
 
 
 Amplify.configure(appSyncConfig);
+DataStore.configure(awsconfig);
 
 const App = () => (
   <Router>

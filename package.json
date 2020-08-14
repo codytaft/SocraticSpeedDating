@@ -3,20 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/datastore": "^2.2.9",
     "aws-amplify": "^3.0.23",
     "aws-appsync": "^3.0.1",
     "aws-appsync-react": "^3.0.1",
     "graphql": "^0.11.7",
     "graphql-tag": "^2.5.0",
     "node-sass": "^4.14.1",
-    "ramda": "^0.27.1",
     "react": "^16.1.1",
     "react-apollo": "^2.0.1",
-    "react-datepicker": "^0.61.0",
     "react-dom": "^16.4.2",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "^3.4.0",
-    "uuid": "^3.1.0"
+    "react-scripts": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

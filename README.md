@@ -4,4 +4,4 @@
   * You can then get a random question from the database
 
 # Architecture
-  * This project uses Aplify and Appsync
+  * This project uses AWS Amplify and Appsync
