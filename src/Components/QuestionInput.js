@@ -4,6 +4,7 @@ import { graphql } from "react-apollo";
 import MutationCreateQuestions from "../GraphQL/MutationCreateQuestions";
 import QueryAllQuestions from "../GraphQL/QueryAllQuestions";
 import QueryGetQuestion from "../GraphQL/QueryGetQuestion";
+import '../Styles/QuestionInput.scss'
 
 const QuestionInput = (props) => {
 
@@ -22,13 +23,11 @@ const QuestionInput = (props) => {
   }
 
     return (
-      <div >
-        <div>
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" value={question} onChange={e => setQuestion(e.target.value)} />
-          <button onClick={handleSave}>Save</button>
-        </div>
-      </div>
+      <section className="question-section">
+        {/* <label className="question-section--label" htmlFor="name">What's on your mind?</label> */}
+        <input className="question-section--input" placeholder="What's on your mind?"type="text" id="name" value={question} onChange={e => setQuestion(e.target.value)} />
+        <button className="question-section--button" onClick={handleSave}>Put</button>
+      </section>
     );
   }
 

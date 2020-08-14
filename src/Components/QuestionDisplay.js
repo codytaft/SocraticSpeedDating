@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { API, graphqlOperation } from 'aws-amplify';
+import '../Styles/QuestionDisplay.scss'
 
 import QueryAllQuestions from "../GraphQL/QueryAllQuestions";
 
 const QuestionDisplay = () => {
-	const [randomQ, setRandomQ] = useState('')
+	const [randomQ, setRandomQ] = useState('Click to get Question')
 
 	const getQuestion = async () => {
 		const newQuestions = await API.graphql(graphqlOperation(QueryAllQuestions));
@@ -13,12 +14,12 @@ const QuestionDisplay = () => {
 	}
 
 	return ( 
-		<div>
-			<p>Question Display: {randomQ}</p>
-			<button onClick={getQuestion}>
-				Get Question
+		<section className="question-display">
+			<p className="question-display--question">{randomQ}</p>
+			<button className="question-display--button" onClick={getQuestion}>
+				Get
 			</button>
-		</div>
+		</section>
 	 );
 }
 

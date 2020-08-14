@@ -9,14 +9,18 @@ import Amplify from 'aws-amplify';
 import './Styles/App.scss';
 import './Styles/reset.scss';
 import { Home } from './Components/Home'
+import Header from './Components/Header'
 
 
 Amplify.configure(appSyncConfig);
 
 const App = () => (
   <Router>
-    <div className="App">
-      <Route exact={true} path="/" component={Home} />
+    <div>
+      <div className="App">
+        <Header />
+        <Route exact={true} path="/" component={Home} />
+      </div>
     </div>
   </Router>
 );
