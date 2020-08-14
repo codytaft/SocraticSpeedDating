@@ -1,15 +1,15 @@
 {
-	"dev": {
-		"awscloudformation": {
-			"AuthRoleName": "amplify-socraticspeeddating-dev-04612-authRole",
-			"UnauthRoleArn": "arn:aws:iam::096979627383:role/amplify-socraticspeeddating-dev-04612-unauthRole",
-			"AuthRoleArn": "arn:aws:iam::096979627383:role/amplify-socraticspeeddating-dev-04612-authRole",
-			"Region": "us-east-1",
-			"DeploymentBucketName": "amplify-socraticspeeddating-dev-04612-deployment",
-			"UnauthRoleName": "amplify-socraticspeeddating-dev-04612-unauthRole",
-			"StackName": "amplify-socraticspeeddating-dev-04612",
-			"StackId": "arn:aws:cloudformation:us-east-1:096979627383:stack/amplify-socraticspeeddating-dev-04612/ae2c9ef0-dd30-11ea-86a6-0e6115325dc3",
-			"AmplifyAppId": "d8vpyfgaqql5e"
-		}
-	}
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-socraticspeeddating-dev-15615-authRole",
+            "UnauthRoleArn": "arn:aws:iam::096979627383:role/amplify-socraticspeeddating-dev-15615-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::096979627383:role/amplify-socraticspeeddating-dev-15615-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-socraticspeeddating-dev-15615-deployment",
+            "UnauthRoleName": "amplify-socraticspeeddating-dev-15615-unauthRole",
+            "StackName": "amplify-socraticspeeddating-dev-15615",
+            "StackId": "arn:aws:cloudformation:us-east-1:096979627383:stack/amplify-socraticspeeddating-dev-15615/779904a0-dd3a-11ea-9adb-0ad23187ddb2",
+            "AmplifyAppId": "d2m15ek0o8gm2m"
+        }
+    }
 }

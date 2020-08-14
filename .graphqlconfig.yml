@@ -1,6 +1,6 @@
 projects:
   Socratic Speed Dating:
-    schemaPath: src/graphql/schema.json
+    schemaPath: src/GraphQL/schema.json
     includes:
       - src/GraphQL/*.js
     excludes:
@@ -12,6 +12,3 @@ projects:
         docsFilePath: src/graphql
         region: us-east-1
         apiId: hb3tocdievenjjlru52vezvvie
-extensions:
-  amplify:
-    version: 3

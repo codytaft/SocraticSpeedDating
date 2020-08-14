@@ -1,37 +1,26 @@
 import React, { useState } from 'react';
-import { graphql } from "react-apollo";
 import { API, graphqlOperation } from 'aws-amplify';
+import '../Styles/QuestionDisplay.scss'
 
 import QueryAllQuestions from "../GraphQL/QueryAllQuestions";
 
-const QuestionDisplay = ({data}) => {
-	const [questions, setQuestions] = useState(data.listQuestions.items)
-	const [randomQ, setRandomQ] = useState(questions[Math.floor(Math.random() * questions.length)].question)
+const QuestionDisplay = () => {
+	const [randomQ, setRandomQ] = useState('Click to get Question')
 
 	const getQuestion = async () => {
-		setRandomQ(questions[Math.floor(Math.random() * questions.length)].question)
 		const newQuestions = await API.graphql(graphqlOperation(QueryAllQuestions));
-		setQuestions(newQuestions.data.listQuestions.items)
+		const questions = newQuestions.data.listQuestions.items
+		setRandomQ(questions[Math.floor(Math.random() * questions.length)].question)
 	}
 
 	return ( 
-		<div>
-			<p>Question: {randomQ}</p>
-			<button onClick={getQuestion}>
-				Get Question
+		<section className="question-display">
+			<p className="question-display--question">{randomQ}</p>
+			<button className="question-display--button" onClick={getQuestion}>
+				Get
 			</button>
-		</div>
+		</section>
 	 );
 }
 
-
-const QuestionDisplayWithData = graphql(
-		QueryAllQuestions,
-		{
-			options: {
-				fetchPolicy: 'cache-and-network',
-			},
-		}
-)(QuestionDisplay);
-
-export default QuestionDisplayWithData;
+export default QuestionDisplay;
