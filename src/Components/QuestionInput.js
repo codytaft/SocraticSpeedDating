@@ -14,7 +14,7 @@ const QuestionInput = (props) => {
     e.preventDefault();
 		const { createQuestion } = props;
 		try {
-			await createQuestion(question);
+			await question.length && createQuestion(question);
 		}
 		catch(e) {
 			console.log(e)
@@ -24,7 +24,6 @@ const QuestionInput = (props) => {
 
     return (
       <section className="question-section">
-        {/* <label className="question-section--label" htmlFor="name">What's on your mind?</label> */}
         <input className="question-section--input" placeholder="What's on your mind?"type="text" id="name" value={question} onChange={e => setQuestion(e.target.value)} />
         <button className="question-section--button" onClick={handleSave}>Give</button>
       </section>
@@ -36,6 +35,7 @@ export default graphql(
   {
     props: (props) => ({
 			update: (proxy, { data: { createQuestion } }) => {
+				
 				// Update QueryAllEvents
 				const query = QueryAllQuestions;
 				const data = proxy.readQuery({ query });
