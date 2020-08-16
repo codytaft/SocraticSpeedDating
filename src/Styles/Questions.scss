@@ -1,0 +1,15 @@
+.questions {
+	padding-top: 5rem;
+	background-color: #ffffff;
+	opacity: 0.7;
+	border-radius: .3rem;
+	height: 100%;
+	&--list {
+		overflow: scroll;
+		height: 100vh;
+		&--item {
+			font-size: 1.5rem;
+			line-height: 1.5;
+		}
+	}
+}

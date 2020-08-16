@@ -10,6 +10,7 @@ import './Styles/App.scss';
 import './Styles/reset.scss';
 import { Home } from './Components/Home'
 import Header from './Components/Header'
+import Questions from './Components/Questions'
 
 
 Amplify.configure(appSyncConfig);
@@ -20,6 +21,7 @@ const App = () => (
       <div className="App">
         <Header />
         <Route exact={true} path="/" component={Home} />
+        <Route exact={true} path="/questions" component={Questions} />
       </div>
     </div>
   </Router>
