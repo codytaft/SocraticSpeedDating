@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import { API, graphqlOperation } from 'aws-amplify';
 import '../Styles/QuestionDisplay.scss'
 
@@ -16,9 +18,16 @@ const QuestionDisplay = () => {
 	return ( 
 		<section className="question-display">
 			<p className="question-display--question">{randomQ}</p>
-			<button className="question-display--button" onClick={getQuestion}>
-				Get
-			</button>
+			<section className="question-display--buttons">
+				<Link className="question-display--buttons__link" to="/questions">
+						<button className="question-display--buttons__get-all">All</button>
+				</Link>
+				<div>
+					<button className="question-display--buttons__get" onClick={getQuestion}>
+						One
+					</button>
+				</div>
+			</section>
 		</section>
 	 );
 }
