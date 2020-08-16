@@ -9,7 +9,7 @@ const QuestionDisplay = () => {
 
 	const getQuestion = async () => {
 		const newQuestions = await API.graphql(graphqlOperation(QueryAllQuestions));
-		const questions = newQuestions.data.listQuestions.items
+		const questions = newQuestions.data.listQuestions.items.filter(q => q.question.length)
 		setRandomQ(questions[Math.floor(Math.random() * questions.length)].question)
 	}
 
