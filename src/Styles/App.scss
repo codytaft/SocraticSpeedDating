@@ -1,5 +1,7 @@
 .App {
 	background: top / cover no-repeat url("../Static/AUDUBON_BIRDS_Magnolia.jpg");
 	width: 100vw;
-	// height: 100vh;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
