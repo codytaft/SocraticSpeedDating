@@ -1,5 +1,5 @@
 .questions {
-	padding-top: 5rem;
+	padding-top: 10rem;
 	background-color: #ffffff;
 	opacity: 0.7;
 	border-radius: .3rem;
@@ -8,8 +8,9 @@
 		overflow: scroll;
 		height: 100vh;
 		&--item {
-			font-size: 1.5rem;
-			line-height: 1.5;
+			font-size: 2rem;
+			font-weight: 600;
+			line-height: 2;
 		}
 	}
 }
