@@ -15,6 +15,8 @@ const Questions = () => {
 		getQuestions();
 	}, [])
 
+	console.log({questions})
+
 	const allQuestions = questions?.data.listQuestions.items
 
 	return ( 
